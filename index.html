@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarthak Jadhav | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- CURSOR EFFECTS -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+  <div id="cursor-trail"></div>
+  <canvas id="particles"></canvas>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-logo">SJ</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-tag">Welcome to my portfolio</div>
+    <h1 class="hero-name">SARTHAK JADHAV</h1>
+    <div class="hero-typed">
+      <span id="typed-text"></span><span class="cursor-blink"></span>
+    </div>
+    <p class="hero-desc">
+      Full Stack Developer | Tech Enthusiast | Problem Solver
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-secondary">Get In Touch</a>
+    </div>
+    <div class="scroll-indicator">
+      <div>Scroll to explore</div>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="section-label">About Me</div>
+    <h2 class="section-title">Who Am I?</h2>
+    
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a passionate developer with a strong foundation in <strong>full-stack development</strong>. 
+          I love building interactive and responsive web applications that solve real-world problems.
+        </p>
+        <p style="margin-top: 20px;">
+          When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+          or enjoying sports and outdoor activities.
+        </p>
+      </div>
+      
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-card-label">Location</div>
+          <div class="info-card-value">India</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-label">Experience</div>
+          <div class="info-card-value">2+ Years</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-label">Projects Completed</div>
+          <div class="info-card-value">15+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <div class="section-label">Expertise</div>
+    <h2 class="section-title">Skills & Technologies</h2>
+    
+    <div class="skills-grid">
+      <div class="skill-category">
+        <div class="skill-category-title">Frontend</div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">HTML/CSS</span>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 0;" data-width="95%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 0;" data-width="90%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">React</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 0;" data-width="85%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-category-title">Backend</div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Node.js</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 0;" data-width="88%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">MongoDB</span>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 0;" data-width="82%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">SQL</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 0;" data-width="80%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-category-title">Tools & Platforms</div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Git/GitHub</span>
+            <span class="skill-pct">92%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 0;" data-width="92%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Docker</span>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 0;" data-width="75%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">REST APIs</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 0;" data-width="88%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- COURSES SECTION -->
+  <section id="courses">
+    <div class="section-label">Learning</div>
+    <h2 class="section-title">Certifications & Courses</h2>
+    
+    <div class="courses-grid">
+      <div class="course-card">
+        <div class="course-icon">📚</div>
+        <div class="course-name">Web Development Bootcamp</div>
+        <div class="course-platform">Udemy</div>
+        <div class="course-badge">COMPLETED</div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon">⚛️</div>
+        <div class="course-name">React Advanced Concepts</div>
+        <div class="course-platform">Coursera</div>
+        <div class="course-badge">COMPLETED</div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon">🗄️</div>
+        <div class="course-name">Database Design & SQL</div>
+        <div class="course-platform">LinkedIn Learning</div>
+        <div class="course-badge">COMPLETED</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">Featured Projects</h2>
+    
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-number">01</div>
+        <div class="project-tag">Web Application</div>
+        <div class="project-title">E-Commerce Platform</div>
+        <div class="project-desc">
+          A full-stack e-commerce solution with React frontend, Node.js backend, and MongoDB database. 
+          Features include product catalog, shopping cart, and payment integration.
+        </div>
+        <div class="project-status">
+          <span class="status-dot"></span>
+          Live
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">02</div>
+        <div class="project-tag">Mobile App</div>
+        <div class="project-title">Task Management App</div>
+        <div class="project-desc">
+          A React Native application for task management with real-time synchronization, 
+          user authentication, and cloud storage capabilities.
+        </div>
+        <div class="project-status">
+          <span class="status-dot"></span>
+          Active
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">03</div>
+        <div class="project-tag">Web Tool</div>
+        <div class="project-title">Portfolio Generator</div>
+        <div class="project-desc">
+          An interactive tool that helps users create beautiful portfolios without coding. 
+          Built with vanilla JavaScript and modern CSS techniques.
+        </div>
+        <div class="project-status">
+          <span class="status-dot"></span>
+          Live
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CERTIFICATE SECTION -->
+  <section id="certificate">
+    <div class="section-label">Achievement</div>
+    <h2 class="section-title" style="margin-bottom: 30px;">Certifications</h2>
+    
+    <div class="certificate-section">
+      <div class="cert-badge">
+        <div class="cert-badge-icon">🏆</div>
+        <div class="cert-badge-label">Award</div>
+      </div>
+      
+      <div class="cert-info">
+        <h3 class="cert-title">AWS Certified Developer</h3>
+        <p class="cert-desc">
+          Successfully completed and certified in AWS Cloud Development. 
+          Specialized in serverless architecture and cloud computing solutions.
+        </p>
+        <div class="cert-upload">
+          <input type="file" id="cert-upload" accept="image/*" />
+          Upload Certificate Image
+        </div>
+        <img id="cert-preview" src="" alt="Certificate" />
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- SPORTS SECTION -->
+  <section id="sports">
+    <div class="section-label">Hobbies</div>
+    <h2 class="section-title">Sports & Interests</h2>
+    
+    <div class="sports-grid">
+      <div class="sport-chip">
+        <span class="sport-icon">⚽</span>
+        <span>Football</span>
+      </div>
+      <div class="sport-chip">
+        <span class="sport-icon">🏀</span>
+        <span>Basketball</span>
+      </div>
+      <div class="sport-chip">
+        <span class="sport-icon">🏋️</span>
+        <span>Fitness</span>
+      </div>
+      <div class="sport-chip">
+        <span class="sport-icon">📖</span>
+        <span>Reading</span>
+      </div>
+      <div class="sport-chip">
+        <span class="sport-icon">🎮</span>
+        <span>Gaming</span>
+      </div>
+      <div class="sport-chip">
+        <span class="sport-icon">🏕️</span>
+        <span>Hiking</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Contact Me</h2>
+    
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">📧</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">
+            <a href="mailto:sarthak@example.com">sarthak@example.com</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-card">
+        <div class="contact-icon">💼</div>
+        <div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">
+            <a href="https://linkedin.com" target="_blank">linkedin.com/in/sarthak</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-card">
+        <div class="contact-icon">🐙</div>
+        <div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">
+            <a href="https://github.com" target="_blank">github.com/sarthakjadhav067</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-card">
+        <div class="contact-icon">🐦</div>
+        <div>
+          <div class="contact-label">Twitter</div>
+          <div class="contact-value">
+            <a href="https://twitter.com" target="_blank">@sarthakjadhav</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & Built with <span>❤️</span> by Sarthak Jadhav | © 2026 All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
